@@ -2,6 +2,7 @@ package com.yogesh.Portfolio_Backend.controller;
 
 import com.yogesh.Portfolio_Backend.model.Project;
 import com.yogesh.Portfolio_Backend.service.ProjectService;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -17,9 +18,9 @@ public class PortfolioController {
         this.projectService = projectService;
     }
 
-    @PostMapping("/projects")
+    @PostMapping(value = "/projects")
     public ResponseEntity<Project> createProject(
-            @RequestBody Project project,
+            @RequestPart("project") Project project,
             @RequestPart("image") MultipartFile image) throws Exception {
         Project savedProject = projectService.createProject(project, image);
         return ResponseEntity.ok(savedProject);
@@ -39,7 +40,7 @@ public class PortfolioController {
     @PutMapping("/projects/{id}")
     public ResponseEntity<Project> updateProject(
             @PathVariable String id,
-            @RequestBody Project project,
+            @RequestPart("project") Project project,
             @RequestPart(value = "image", required = false) MultipartFile image) throws Exception {
         Project updatedProject = projectService.updateProject(id, project, image);
         return ResponseEntity.ok(updatedProject);
