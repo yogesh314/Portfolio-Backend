@@ -1,5 +1,6 @@
-package com.yogesh.Portfolio_Backend.model;
+package com.yogesh.Portfolio_Backend.model.documents.contact_submission;
 
+import com.yogesh.Portfolio_Backend.model.BaseEntity;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

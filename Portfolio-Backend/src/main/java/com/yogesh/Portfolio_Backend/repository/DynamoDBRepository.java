@@ -1,4 +1,4 @@
-package com.yogesh.Portfolio_Backend.repo;
+package com.yogesh.Portfolio_Backend.repository;
 
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import java.util.List;

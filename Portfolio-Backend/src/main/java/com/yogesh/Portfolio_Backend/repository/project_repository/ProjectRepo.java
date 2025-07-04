@@ -1,6 +1,7 @@
-package com.yogesh.Portfolio_Backend.repo;
+package com.yogesh.Portfolio_Backend.repository.project_repository;
 
-import com.yogesh.Portfolio_Backend.model.Project;
+import com.yogesh.Portfolio_Backend.model.documents.project.Project;
+import com.yogesh.Portfolio_Backend.repository.DynamoDBRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,8 +1,7 @@
 package com.yogesh.Portfolio_Backend.controller;
 
-import com.yogesh.Portfolio_Backend.model.Project;
+import com.yogesh.Portfolio_Backend.model.documents.project.Project;
 import com.yogesh.Portfolio_Backend.service.ProjectService;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

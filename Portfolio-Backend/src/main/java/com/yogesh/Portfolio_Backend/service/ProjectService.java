@@ -1,7 +1,7 @@
 package com.yogesh.Portfolio_Backend.service;
 
-import com.yogesh.Portfolio_Backend.model.Project;
-import com.yogesh.Portfolio_Backend.repo.ProjectRepo;
+import com.yogesh.Portfolio_Backend.model.documents.project.Project;
+import com.yogesh.Portfolio_Backend.repository.project_repository.ProjectRepo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import software.amazon.awssdk.services.s3.S3Client;

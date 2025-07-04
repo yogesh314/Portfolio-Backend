@@ -1,5 +1,6 @@
-package com.yogesh.Portfolio_Backend.repo;
+package com.yogesh.Portfolio_Backend.repository;
 
+import com.yogesh.Portfolio_Backend.model.documents.project.Project;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
